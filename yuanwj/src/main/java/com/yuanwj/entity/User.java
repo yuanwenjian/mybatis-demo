@@ -1,8 +1,11 @@
 package com.yuanwj.entity;
 
+import org.springframework.stereotype.Repository;
+
 /**
  * Created by bmk on 16-9-19.
  */
+@Repository
 public class User {
     private Integer id;
 
