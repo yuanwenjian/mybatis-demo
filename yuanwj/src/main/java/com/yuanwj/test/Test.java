@@ -26,7 +26,7 @@ public class Test {
 //        SqlSessionFactory  sqlSessionFactory= new SqlSessionFactoryBuilder().build(reader);
 //        SqlSession sqlSession=sqlSessionFactory.openSession();
 //        User user=sqlSession.getMapper(IUserMapper.class).selectUserByID(1);
-        User user=iUserMapper.selectUserByID(1);
+        User user=iUserMapper.findById(1);
         System.out.println(user.getId());
         System.out.println(user.getName());
         System.out.println(user.getPassword());

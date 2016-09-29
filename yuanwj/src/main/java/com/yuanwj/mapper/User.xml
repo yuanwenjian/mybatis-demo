@@ -3,7 +3,11 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.yuanwj.dao.IUserMapper">
-    <select id="selectUserByID" parameterType="int" resultType="User">
+    <select id="findById" parameterType="int" resultType="User">
         select * from `t_user` where id = #{id}
+    </select>
+
+    <select id="findByName" parameterType="string" resultType="User">
+        select * from t_user where name = #{name}
     </select>
 </mapper>
